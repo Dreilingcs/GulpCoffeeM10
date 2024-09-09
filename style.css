@@ -79,6 +79,10 @@ body {
     color: #F2F2F2; /* White */
     text-align: center;
     padding: 10px;
+    position: fixed bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
    .ourstory {
@@ -97,4 +101,68 @@ body {
   .pix {
   display: flex;
   gap: 75px;
+  }
+
+  .ourcoffeeselection {
+    color: #F2F2F2; /* White */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    max-width: 80%;
+    margin: 0 auto; 
+    border: 5px solid #D98555; 
+    padding: 20px;
+    background-color: #131D26; /* Navy blue */
+  }
+
+  .products {
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    nav li {
+      display: block;
+      margin: 10px 0;
+      }
+  
+    .pix {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .ourstory {
+      padding: 10px;
+      border-width: 2px;
+    }
+    .products{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .pix {
+      flex-direction: row;
+      gap: 50px;
+    }
+  
+    .ourstory {
+      padding: 15px;
+      border-width: 3px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .pix {
+      flex-direction: row;
+      gap: 75px;
+    }
+  
+    .ourstory {
+      padding: 20px;
+      border-width: 5px;
+    }
   }
